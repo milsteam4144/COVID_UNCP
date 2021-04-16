@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/UNCP Interactive COVID STATS.iml" filepath="$PROJECT_DIR$/.idea/UNCP Interactive COVID STATS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/COVID_UNCP.iml" filepath="$PROJECT_DIR$/.idea/COVID_UNCP.iml" />
     </modules>
   </component>
 </project>

@@ -1,16 +1,17 @@
-import chart_studio.tools as tls
 import pandas as pd
 import plotly.express as px
 
-features = ["Date", "Students", "Employees", "Subcontractors"]
+#This script creates a plotly graph for the quarantined.csv data
+features = ["Date", "Quarantined"]
 
 covid_data = pd.read_csv(
-    "data/UNCP_ACTIVE_CASES.csv",
+    "data/quarantined.csv",
     names=features,
     sep=r'\s*,\s*',
     engine='python',
     na_values="?",
     skiprows=1)
 
-fig = px.bar(covid_data, x="Date", y="Students", color="Students", title="Students with Active Cases")
-fig.write_html("student_graph.html")
+fig = px.bar(covid_data, x="Date", y="Quarantined", color="Quarantined", title="Percentage of Quarantined Students living On-Campus", labels={
+                     "Quarantined": "Percentage Quarantined"},)
+fig.write_html("quarantined.html")

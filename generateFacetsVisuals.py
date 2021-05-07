@@ -12,7 +12,7 @@ covid_data = pd.read_csv(
 # Display the Dive visualization for the covid data.
 from IPython.core.display import display, HTML
 
-jsonstr = covid_data.to_json(orient='records', )
+jsonstr = covid_data.to_json(orient='records',)
 HTML_TEMPLATE = """
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.3.3/webcomponents-lite.js"></script>
         <link rel="import" href="https://raw.githubusercontent.com/PAIR-code/facets/1.0.0/facets-dist/facets-jupyter.html">
